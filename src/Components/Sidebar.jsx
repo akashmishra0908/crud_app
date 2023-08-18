@@ -33,6 +33,7 @@ export const Sidebar = () => {
         }
         setCategory(newCategory);
     }
+        // console.log(category);
 
     const handleGender = (e) => {
         const { value } = e.target;
@@ -54,15 +55,15 @@ export const Sidebar = () => {
         <Div>
             <h3>Filter by category</h3>
             <div>
-                <input type="checkbox" value={"top-wear"} onChange={handleCategory} checked={category.includes("top-wear")} />
+                <input type="checkbox" value={"topwear"} onChange={handleCategory} checked={category.includes("topwear")} />
                 <label>Top Wear</label>
             </div>
             <div>
-                <input type="checkbox" value={"bottom-wear"} onChange={handleCategory} checked={category.includes("bottom-wear")} />
+                <input type="checkbox" value={"bottomwear"} onChange={handleCategory} checked={category.includes("bottomwear")} />
                 <label>Bottom Wear</label>
             </div>
             <div>
-                <input type="checkbox" value={"foot-wear"} onChange={handleCategory} checked={category.includes("foot-wear")} />
+                <input type="checkbox" value={"footwear"} onChange={handleCategory} checked={category.includes("footwear")} />
                 <label>Foot Wear</label>
             </div>
             <br />
